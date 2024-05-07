@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>German's CV</title>
+    <link rel=" stylesheet" href="style.css"/>  
+    <script src="https://kit.fontawesome.com/4758bbcd7c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo" />
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend/Backend programmer</p>
+                <h1>Shalom! My name is<br /> <span>German Vinokurov</span>, I am <br /> a professional <br />programmer and <br />web-designer.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/me2.jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        I was born in Israel in 2007 and since then has always wondered how computng works.
+                        After having experienced with it in school, I made an important decision to dive
+                        head into the world of programming, and have found great sucess. As of now, I am
+                        a student at National University of Science and Technology. My skills include: backend
+                        and frontend development with just under 3 years of experience in several languages, that include:
+                        HTML, Java, CSS, C#, JavaScript, Python. I have made many apps for both IOS,
+                        Andriod and even Desktop. I also have great experience in creating websites,
+                        and much more.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br />Designing interfces for websites and apps</li>
+                            <li><span>Web Development</span><br />Making websites with complex components</li>
+                            <li><span>App Creation</span><br />Creating apps out of ideas</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br />Unfortunately, I have not done many open-source development yet. However, I would love to gain any internship and possible experience</li>
+                            <li><span>Web Development</span><br />.</li>
+                            <li><span>App Creation</span><br />.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014-2022</span><br />External education "First externship"</li>
+                            <li><span>2022-2023</span><br />Reichman University in Israel</li>
+                            <li><span>2023-2026</span><br />International University of Science and Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Services------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Helping you build the best possible website by adding design and responsivness to it.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Phone Applications</h2>
+                    <p>Making an app that would fit any criteria.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Desktop computing</h2>
+                    <p>Creating a desktop app that would satisfy any of your needs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------Portfolio----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="Images/work-1.gif" />
+                    <div class="layer">
+                        <h3>Travel App</h3>
+                        <p>The app that lets you find out the cost of your vacation depending on several changable factors based on current-time analysis</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" />
+                    <div class="layer">
+                        <h3>Game Applications</h3>
+                        <p>Multiple games that I created were later published online and gained popularity</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png" />
+                    <div class="layer">
+                        <h3>Interactive websites</h3>
+                        <p>Multiple awesome interactive websites that were made possible because of my work and my collaborations    with several developers</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!----------------Contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>girshvinok@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>@girsh_vinok</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/german_progq/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/GermanVinokurov"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://vk.com/girsh_vinok"><i class="fa-brands fa-vk"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required />
+                    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyrighted by @German <i class="fa-solid fa-bolt"></i> </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>     
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfVnY47Dk3X_NBs6Nyzy_1qWJwpdzW5CY-7O-YS9ChB7PhT7c0SpCfO9pkmJn0xYKC/exec'
+        const form = document.forms["submit-to-google-sheet"]
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Your message has been sent!"
+                    setTimeout(function () {
+                        msg.innerHTML = "";                    
+                    }, 3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

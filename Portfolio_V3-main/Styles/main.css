@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {	
+    font-family: "Poppins", sans-serif;
+    background: transparent;    
+    scroll-behavior: smooth;
+    color: #fff;
+  }
+  body {
+    background-color: #212425;
+  }
+  .container {
+    padding: 0 10%;
+  }
+  .page-content, body {
+    overflow-x: hidden;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100vw;
+    
+  }
+  * {
+    inset: 0;
+    padding: 0;
+    margin: 0;
+  }
+#header {
+    width: calc(100%);
+    background-color: #2d2d2d;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    font-size: 23px;
+    justify-content: space-between;
+    align-items: center;    
+    border-top: solid .3px #ffff00;   
+    bottom:0; 
+    padding:0;
+    margin:0;
+    inset:0;
+    top: 83.4vh;
+    height: 100px;
+    transition: all .7s;
+}
+.logo {
+    height: 100px;    
+}
+.logo-a {
+    height: 100px;
+    inset: 0;
+    padding: 0;
+    margin: 0;      
+}
+.menu {
+    margin-right: 70px;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;      
+}
+.menu-option {
+    margin-top: 20px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 400;
+    transition: box-shadow .7s, transform 1.3s;
+    transform: translate3d(-2.3px, 2px, 100px);    
+}
+.menu-option:hover {
+    transform: translateY(0);
+    box-shadow: 3px -3px 1px rgba(0, 0, 0, 0.355);
+}
+.intro {
+    text-align: center;
+    margin-bottom: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.intro-under {
+    font-size: 56px;    
+}
+.intro-text {
+    inset: 0;
+    margin: 0;
+    font-size: 80px;
+    background: linear-gradient(to right, yellow, purple, lime);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 2s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+title {
+    text-align: center;
+    font-size: 40px;
+}
+#contact {
+    position: relative;
+}
+.copy-text {
+    font-size: 20px;
+    background: none;
+    padding-left: 33.4vw;
+}
+.copyright {
+    align-items: center;
+    text-align: center;      
+    height: 50px;
+    margin-top: 500px;
+    position: relative;
+    display: flex;
+    width: 100vw;
+    border-top: solid 2px #ffff0096;
+    background-color: #5b5b0039;        
+}
+.copy-a {
+    text-decoration: none;
+}
+.fa-bolt {
+    color: purple;
+}
+#contact {
+    margin-top: 100px;
+}
