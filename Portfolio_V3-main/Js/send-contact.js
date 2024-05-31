@@ -1,4 +1,5 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwiGta-0beEy1iTbarpFBzWbGmWU_F1_yOqWH5pNOrT_KaixFR4feug2i9g8prZh7IcKQ/exec'
+const scriptURL = 0;
+//Find Your Google Upload link to the Google Sheets Table
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
